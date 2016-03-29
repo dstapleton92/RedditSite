@@ -1,1 +1,10 @@
-<h1>Hello World!</h1>
+<h1>Awwwwwwwwwwwwww!</h1>
+<plat-foreach class="reddit-list" plat-context="items">
+    <div class="reddit-item">
+        <h1>{{ title }}</h1>
+        <h3>{{ author }}</h3>
+        <h5>{{ id }}</h5>
+        <img plat-src="{{ thumbnail }}">
+        <plat-link plat-options="{view: @rootContext.detailView, parameters: { redditId: id } }">Read more...</plat-link>
+    </div>
+</plat-foreach>
